@@ -1,0 +1,33 @@
+#contenedor{
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+
+}
+
+#calculadora{
+    background-color: rgba(245, 245, 245, 0.699);
+    width: 50%;
+    height: 100%;
+    float: left;
+
+}
+
+#detalles{
+    background-color: rgb(80, 00, 40);
+    width: 50%;
+    height: 100%;
+    float: left;
+    color: rgb(150, 250, 217);
+
+}
+
+#foto{
+    width: auto;
+    height: 100%;
+    margin-left: -7%;
+    
+}
