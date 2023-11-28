@@ -1,33 +1,46 @@
-#contenedor{
-    width: 50%;
-    height: 50%;
+#cuerpo {
+    background-image: linear-gradient(-45deg, rgb(0, 1, 61), rgb(0, 83, 161), rgb(4, 226, 255));
+
+
+    background-repeat: no-repeat;
+    background-position: absolute;
+
+}
+
+
+#contenedor {
+    width: 700px;
+    height: 400px;
     text-align: center;
     position: absolute;
     inset: 0;
     margin: auto;
 
+
 }
 
-#calculadora{
+#calculadora {
     background-color: rgba(245, 245, 245, 0.699);
     width: 50%;
     height: 100%;
     float: left;
+    font-size: auto;
 
 }
 
-#detalles{
+#detalles {
     background-color: rgb(80, 00, 40);
     width: 50%;
     height: 100%;
     float: left;
     color: rgb(150, 250, 217);
+    font-size: auto;
 
 }
 
-#foto{
+#foto {
+
     width: auto;
     height: 100%;
-    margin-left: -7%;
-    
+    margin-left: -40px;
 }
