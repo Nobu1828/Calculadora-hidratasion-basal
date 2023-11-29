@@ -1,83 +1,47 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Calculadora de hidratación</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div id="contenedor">
 
-<head>
-    <title>Calculadora de hidratacion</title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="./script.js"></script>
-</head>
-
-<Body id="cuerpo">
-    <div id="contenedor">
-
-        <div id="calculadora">
-            <div class="contenido">
-                <h1>Hidratacion Basal</h1>
-
-                <p><b>* Debe completar todos los datos</b></p>
-
-                <label>Ingrese el Peso</label>
-                <input type="number" name="Peso" id="calculo 1" placeholder="Peso = Kg">
-
-                <p><button type="button">Calcular</button></p>
-
-                <p>71cc/h</p>
-                <p>m+m/2 : 105/h</p>
+            <div id="calculadora">
+                <div class="contenido">
+                    <h1 id="hidratacion"> Hidratación Basal</h1>
+                    <p class="item" id="completar">Completa todos los datos</p>
+                    <input class="item" id="peso" type="number" placeholder="Peso en kg" />
+                    <p class="item" id="error" >* Debe completar todos los datos</p>
+                    <button class="item" id="calcular">Calcular</button>
+                    <p class="item resultado" id="flu" >71cc/h</p>
+                    <p class="item resultado" id="man" ;>105cc/h</p>
+                </div>
             </div>
-
-
-        </div>
-
-        <div id="detalles">
-            <div class="contenido">
-                <h1>¿Como se calcula?</h1>
-                <!--Queria probar el codigo "mark" para resaltar pero no me reconocia-->
-
-                <ul>
-                    <li>De <b>0Kg</b> a <b>10Kg</b>, se calcula <b>100cc</b> cada <b>Kg.</b></li>
-                    <li>Se <b>suman 50cc</b> por cada <b>Kg</b> cuando es <b>mayor</b> que <b>10Kg</b>, hasta
-                        <b>20Kg</b></li>
-                    <li><b>Mayor</b> a <b>20Kg</b>, se <b>suman 20cc</b> por cada <b>Kg adicional</b></li>
-                </ul>
+            <div id="detalle">
+                <div class="contenido">
+                    <h1>¿Como se calcula?</h1>
+                    <ul id="textoDetalle">
+                        <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
+                        <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
+                        <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
+                    </ul>
+                </div>
             </div>
-
-        </div>
-        <div id="foto">
-            <div class="contenido">
-                <figure>
-
-                    <figcaption>
-                        <h2>Estimacion general de la hidratacion segun la edad</h2>
-                    </figcaption>
-                    <img src="https://vitaminabe.files.wordpress.com/2016/05/recomendaciones-agua1.jpg?w=768&h=451"
-                        alt="Bassal">
-                </figure>
-            </div>
-        </div>
-
-
-
-
-
-        <!-- Aqui yace mi intento de añadir un video en el que perdi la nocion
-                    del tiempo y creo que lo llevo intentando mas de 2 horas jajajajajajj
-
-                    <hr>
-
+            <div id="foto">
+                <div >
+                    <figure>
     
-                    <h2>¿Que liquido es mejor para hidratarte?</h2>
-                    <iframe width="500" height="300" autoplay="1" mute="1" 
-                    src="Probe varios y o no era compatible o no aceptabam">
+                        <figcaption>
+                            <h2 >Estimacion general de la hidratacion segun la edad</h2>
+                        </figcaption>
+                        <img id="imagen" src="https://vitaminabe.files.wordpress.com/2016/05/recomendaciones-agua1.jpg?w=768&h=451"
+                            alt="Bassal">
+                    </figure>
+                </div>
+            </div>
 
-                    </iframe>
-
-                    Es bastante corto pero estuve tarde mas buscando las entradas, como funcionan y sus significados
-                     -->>
-
-
-    </div>
-
-</Body>
-
+        </div>
+    </body>
 </html>
