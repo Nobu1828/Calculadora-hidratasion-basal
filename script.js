@@ -17,8 +17,8 @@ function calculo (peso){
         const mm = Math.round(mantenimiento * 1.5);
         
         resultado = `<br>
-                    Volumen diario: ${volumenDiario} cc, <br>
-                    Mantenimiento: ${mantenimiento} cc/hr, <br>
+                    Volumen diario: ${volumenDiario} cc <br>
+                    Mantenimiento: ${mantenimiento} cc/hr <br>
                     m+m/2: ${mm} cc`;        
     } 
 
@@ -29,8 +29,8 @@ function calculo (peso){
         const mantenimiento = Math.round(volumenDiario / 24 ) ;
         const mm = Math.round(mantenimiento * 1.5);
         resultado = `<br>
-                    Volumen diario: ${volumenDiario} cc, <br>
-                    Mantenimiento: ${mantenimiento} cc/hr, <br>
+                    Volumen diario: ${volumenDiario} cc <br>
+                    Mantenimiento: ${mantenimiento} cc/hr <br>
                     m+m/2: ${mm} cc`;        
     } 
 
@@ -40,8 +40,8 @@ function calculo (peso){
         const mantenimiento = Math.round(volumenDiario / 24 ) ;
         const mm = Math.round(mantenimiento  * 1.5);
         resultado = `<br>
-                    Volumen diario: ${volumenDiario} cc, <br>
-                    Mantenimiento: ${mantenimiento} cc/hr, <br>
+                    Volumen diario: ${volumenDiario} cc <br>
+                    Mantenimiento: ${mantenimiento} cc/hr <br>
                     m+m/2: ${mm} cc`;        
     } 
 
@@ -52,22 +52,27 @@ function calculo (peso){
         const SC3 = SC / SC2
         const sc1500 = Math.round(SC3 * 1500);
         const sc2000 = Math.round(SC3 * 2000);
-        const mantenimiento = Math.round(sc1500 / 24 );
+       /* const mantenimiento = Math.round(sc1500 / 24 );
         const mantenimiento1 = Math.round(sc2000 / 24 );
         const mm = (mantenimiento * 1.5);
         const mm1 = (mantenimiento1 * 1.5);
+        
+                            Aca esta por si quieren que tambien muestre el mantenimiento y el M+M/2
+                            Solamente tienen que borrar los  (/ * , * /)  */
         resultado = `<br>
-                    SC * 1500: ${sc1500} cc, <br>
-                    Mantenimiento: ${mantenimiento} cc/hr, <br>
-                    M+M/2: ${mm}, <br>
+                    SC * 1500: ${sc1500} cc <br>
                     <br>
-                    SC * 2000: ${sc2000}, <br>
+                    SC * 2000: ${sc2000} cc <br>`;
+                    /*Mantenimiento: ${mantenimiento} cc/hr, <br>
+                    M+M/2: ${mm}, <br>
+                    
+                    
                     Mantenimiento: ${mantenimiento1} cc/hr, <br>
-                    M+M/2: ${mm1} cc, <br>`;
+                    M+M/2: ${mm1} cc, <br>`;*/
     }
-    return `Para un peso de ${peso} ${unidad}, <br>
-            Se utilizo el metodo ${metodo}. <br>
-            ${resultado}.`;
+    return `Para un peso de ${peso} ${unidad} <br>
+            Se utilizo el metodo ${metodo} <br>
+            ${resultado}`;
 }
 
 function reiniciar() {
@@ -86,7 +91,7 @@ CALCULAR.addEventListener('click', () => {
     if (DATO > 0){
         ERROR.style.display = 'none'
         let flujo = calculo(DATO);
-        FLU.innerHTML = flujo ;
+        FLU.innerHTML =  flujo;
         MAN.innerHTML = 'Los resultados son una aproximacion y pueden no ser exactos'
         FLU.style.display = 'block';
         MAN.style.display = 'block';
